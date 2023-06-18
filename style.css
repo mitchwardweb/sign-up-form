@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 80vh;
+}
+
+.form-container{
+    background-color: blue;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-side{
+    background-color: green;
+    width: 50%;
+}
+
+.sign-up{
+    width: 80%;
+    background-color: beige;
+}
