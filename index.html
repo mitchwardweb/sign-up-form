@@ -4,29 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap" rel="stylesheet">
     <script src="form.js"></script>
     <title>Odin sign up form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="image-side"></div>
+    <section class="hero-image">
+        <div class="logo-banner">
+            <div class="logo-text">
+                <h2>THE ODIN</h2>
+            </div>
+            <div class="logo-holder">
+                <img src="odin-lined.png" alt="odin project logo" class="logo">
+            </div>
+            <div class="logo-text">
+                <h2>PROJECT</h2>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="hero-text">
+            <h2>Welcome to this thing that I made, try to sign up, it won't actually submit anything</h2>
+            <p>We can pretend though, and see if my client-side validation works!</p>
+        </div>
         <div class="form-container">
             <form action="" method="post" class="sign-up">
-                <h3>Create an account</h3>
-                <div class="hw-form-row">
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name required">
+                <h3 class="form-header">Create an account</h3>
+                <div class="input-container">
+                    <div class="hw fr">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="e.g Mitchell" required>
+                    </div>
+                    <div class="hw fr">
+                        <label for="last-name">Last name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="e.g Ward" required>
+                    </div>
+                    <div class="hw fr">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Mobile or landlines accepted" minlength="10" maxlength="10">
+                    </div>
+                    <div class="fw fr">
+                        <label for="email">Email adress:</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="hw fr">
+                        <label for="password">Create Password:</label>
+                        <input type="password" id="password" name="password"
+                                placeholder="Must be at least 6 characters" minlength="6" required>
+                    </div>
+                    <div class="hw fr">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Retype password" minlength="6">
+                    </div>
                 </div>
-                <div class="hw-form-row">
-                    <label for="last-name">First name</label>
-                    <input type="text" id="last-name" name="last-name required">
-                </div>
-                <div class="fw-form-row">
-                    <label for="email">Email adress:</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
+                <button class="submit-btn" type="submit"> Sign up</button>
             </form>
+            <div class="login">
+                <p>Or if you already have an account, <a href="#">sign in here</a></p>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
