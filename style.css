@@ -80,6 +80,24 @@ h5, p {
     border: 2px solid red;
 }
 
+.invalid{
+    border: 2px solid red;
+}
+
+.error{
+    display: none;
+    font-size: 0.7rem;
+    color: red;
+    align-self: center;
+}
+
+.success{
+    display: none;
+    font-size: 0.7rem;
+    color: #31c68f;
+    align-self: center;
+}
+
 .submit-btn{
     background-color: #31c68f;
     font-family: var(--main-font);
